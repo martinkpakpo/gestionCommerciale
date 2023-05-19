@@ -9,7 +9,7 @@
 @endphp
 @extends('layouts.app')
 @section('content')
-@include('layouts.configuration.stock')
+@include('layouts.configuration.vente')
 <div id="myTabContent1" class="tab-content padding-10">
     <div class="tab-pane fade in active" id="s1">
         <div class="row">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <br>
-                @if ($Ventes[0]->etat=='VALIDE')
+                @if ($Ventes[0]->etat=='NON-SOLDE')
                 <div class="row">
                     <div class="col-md-12">
                         <div class="jarviswidget well" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
@@ -82,7 +82,7 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td>Fournisseur</td>
+                                                                <td>Client</td>
                                                                 <td>{{$Ventes[0]->tier->libelle}}</td>
                                                             </tr>
                                                             <tr>
@@ -166,16 +166,14 @@
                                     <div class="row">
                                         <div class="col-md-2">
                                             <div>
-                                                <button type="button"  class="btn btn-danger" onclick='page_redirect("{{asset("/Approvisionnement_V1/liste")}}")'>Retour à la liste des commandes</button>
+                                                <button type="button"  class="btn btn-danger" onclick='page_redirect("{{asset("/Vente_V1/liste")}}")'>Retour à la liste des ventes</button>
                                             </div>
                                         </div>
                                         <div class="col-md-10" >
                                     
-                                            @if (($Ventes[0]->status =='VALIDE') ||($Ventes[0]->status =='LIVRE') )
                                             <div>
                                                 <button type="button"  class="btn btn-success" onclick='printbon({{$Ventes[0]->id}})'>Imprimer le bon</button>
                                             </div>
-                                            @endif
                                            
                                         </div>
                                     </div>
@@ -201,39 +199,6 @@ function printbon(id) {
 
  }
 
-function unvalider(id) {
-    var url='{{asset("/Approvisionnement_V1/unvalidation")}}/'+id;
-    $.alert.open(
-    'Voulez-vous annuler la commande',
-    {
-        A: 'Oui',
-        C: 'Non'
-    },
-    function(button) {
-        if (button=="A")
-            page_redirect(url);
-        else
-            $.alert.open('Suppression annulée');
-    }
-);
-}
-
-function valider(id) {
-    var url='{{asset("/Approvisionnement_V1/validation")}}/'+id;
-    $.alert.open(
-    'Voulez-vous approuvé la commande',
-    {
-        A: 'Oui',
-        C: 'Non'
-    },
-    function(button) {
-        if (button=="A")
-            page_redirect(url);
-        else
-            $.alert.open('Validation annulée');
-    }
-);
-}
 
 </script>
 @endsection
