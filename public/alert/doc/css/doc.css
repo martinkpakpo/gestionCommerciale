@@ -1,0 +1,97 @@
+pre {
+    white-space: pre-wrap;
+}
+
+p,
+table,
+hr,
+.box,
+h4 {
+    margin-bottom: 25px;
+}
+
+hr {
+    border-top: 1px solid #ddd;
+    height: 0;
+    background: none;
+}
+
+hr.dashed {
+    border-top-style: dashed;
+}
+
+.box p {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-bottom: 1.8em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+ul {
+    margin-left: 0;
+    list-style: none;
+}
+
+.highlight {
+    color: #b22222;
+    background: none;
+}
+
+i[class^="icon-"] {
+    margin-right: 5px;
+    font-size: 110%;
+}
+
+th,
+td {
+    vertical-align: top;
+}
+
+table {
+    border: 1px solid #c3d9ff;
+}
+
+tbody tr {
+    background: #fefefe;
+}
+
+th + th,
+td + td {
+    border-left: 1px solid #c3d9ff;
+}
+
+tr:nth-child(2n) td {
+    background: #e5ecf9;
+}
+
+table.usage th:nth-child(2),
+table.usage td:nth-child(2) {
+    white-space: nowrap;
+}
+
+table.setup th:first-child,
+table.setup td:first-child {
+    width: 150px;
+}
+
+#example-usage_container {
+    position: relative;
+    border: 1px solid #bbb;
+    padding: 5px 9px;
+    width: 400px;
+    height: 400px;
+    background: #f1f1f1;
+}
+
+#smartAlert[data-icon="hand"] #smartAlertIcon {
+    background-image: url(../img/hand.png);
+}
+
+#smartAlert[data-icon="tip"] #smartAlertIcon {
+    background-image: url(../img/tip.png);
+}

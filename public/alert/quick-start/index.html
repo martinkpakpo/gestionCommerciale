@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Smart Alert Demos</title>
+        <meta charset="utf-8" />
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link
+            href="css/reset.css"
+            rel="stylesheet"
+        />
+        <link
+            href="css/highlight.css"
+            rel="stylesheet"
+        />
+        <link
+            href="css/page.css"
+            rel="stylesheet"
+        />
+        <link
+            href="alert/css/alert.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="alert/themes/default/theme.min.css"
+            rel="stylesheet"
+        />
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="alert/js/alert.min.js"></script>
+        <script src="js/page.js"></script>
+    </head>
+    <body>
+    <div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Stylish-jQuery-Notification-Alert-Plugin-Smart-Alert.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+        <div id="page" style="margin-top:150px;">
+
+            <!-- DOCUMENTATION -->
+
+            <a
+                href="../doc/index.html"
+                target="_blank"
+                class="button orange big doc"
+            />
+                Click to view full documentation
+            </a>
+
+            <!-- PREFACE -->
+
+            <h1>
+                <b>Smart Alert</b> quick-start guide
+            </h1>
+
+            <!-- Files -->
+
+            <div class="box">
+                <h2>
+                    Files
+                </h2>
+                <br /><br />
+                <p>
+                    Put these files into the &lt;head&gt; section of the page:
+                </p>
+                <br /><br />
+<pre class="visible"><code class="xml"><span class="comment">&lt;!-- JQUERY --&gt;</span>
+
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="comment">&lt;!-- ALERT --&gt;</span>
+
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alert/css/alert.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span>
+<span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alert/themes/default/theme.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span>
+<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"alert/js/alert.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre>
+            </div>
+
+            <!-- THEME -->
+
+            <div class="box">
+                <h2>
+                    Theme
+                </h2>
+
+                <!-- DEFAULT -->
+
+                <h3>
+                    Default
+                </h3>
+                <img
+                    src="data/warning.png"
+                    alt=""
+                />
+                <br />
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="xml"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alert/themes/<b>default</b>/theme.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span></code></pre>
+                <hr />
+
+                <!-- DARK -->
+
+                <h3>
+                    Dark
+                </h3>
+                <img
+                    src="data/dark.png"
+                    alt=""
+                />
+                <br />
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="xml"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alert/themes/<b>dark</b>/theme.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span></code></pre>
+                <hr />
+
+                <!-- LIGHT -->
+
+                <h3>
+                    Light
+                </h3>
+                <img
+                    src="data/light.png"
+                    alt=""
+                />
+                <br />
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="xml"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">href</span>=<span class="value">"alert/themes/<b>light</b>/theme.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> /&gt;</span></code></pre>
+            </div>
+
+            <!-- PREDEFINED TYPE -->
+
+            <div class="box">
+                <h2>
+                    Alert type
+                </h2>
+
+                <!-- INFO -->
+
+                <img
+                    src="data/info.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-info"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+                <hr />
+
+                <!-- CONFIRM -->
+
+                <img
+                    src="data/confirm.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-confirm"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'confirm'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+                <hr />
+
+                <!-- WARNING -->
+
+                <img
+                    src="data/warning.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-warning"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'warning'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+                <hr />
+
+                <!-- ERROR -->
+
+                <img
+                    src="data/error.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-error"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'error'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+                <hr />
+
+                <!-- PROMPT -->
+
+                <img
+                    src="data/prompt.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-prompt"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<span class="string">'prompt'</span>, <span class="string">'Lorem ipsum dolor sit amet'</span>);</code></pre>
+            </div>
+
+            <!-- TITLE -->
+
+            <div class="box">
+                <h2>
+                    Title
+                </h2>
+                <img
+                    src="data/title.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-title"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'info'</a>, <a class="string">'My title'</a>, <a class="string">'Lorem ipsum dolor sit amet'</a>);</code></pre>
+            </div>
+
+            <!-- CUSTOM BUTTONS -->
+
+            <div class="box">
+                <h2>
+                    Custom buttons
+                </h2>
+
+                <!-- CUSTOM BUTTONS -->
+
+                <img
+                    src="data/custom_buttons.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-buttons"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>, {
+    someId: <a class="string">'Abc'</a>,
+    otherId: <a class="string">'Def'</a>
+});</code></pre>
+            </div>
+
+            <!-- CALLBACK -->
+
+            <div class="box">
+                <h2>
+                    Callback
+                </h2>
+
+                <!-- CONFIRM -->
+
+                <h3>
+                    Confirm
+                </h3>
+                <img
+                    src="data/confirm.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-callback_confirm"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<span class="string">'confirm'</span>, <span class="string">'Lorem ipsum dolor sit amet'</span>, <span class="function"><span class="keyword">function</span><span class="params">(button)</span> {</span>
+    <span class="keyword">if</span> (button == <span class="string">'yes'</span>)
+        $.alert.open(<span class="string">'You pressed the "Yes" button.'</span>);
+    <span class="keyword">else</span> <span class="keyword">if</span> (button == <span class="string">'no'</span>)
+        $.alert.open(<span class="string">'You pressed the "No" button.'</span>);
+    <span class="keyword">else</span>
+        $.alert.open(<span class="string">'Alert was canceled.'</span>);
+});</code></pre>
+                <hr />
+
+                <!-- PROMPT -->
+
+                <h3>
+                    Prompt
+                </h3>
+                <img
+                    src="data/prompt.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-callback_prompt"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<span class="string">'prompt'</span>, <span class="string">'Lorem ipsum dolor sit amet'</span>, <span class="function"><span class="keyword">function</span><span class="params">(button, value)</span> {</span>
+    <span class="keyword">if</span> (button == <span class="string">'ok'</span>)
+        $.alert.open(value || <span class="string">'No value has been entered'</span>);
+});
+</code></pre>
+                <hr />
+
+                <!-- CUSTOM BUTTONS -->
+
+                <h3>
+                    Custom buttons
+                </h3>
+                <img
+                    src="data/callback.png"
+                    alt=""
+                />
+                <br />
+                <a
+                    href="#demo-callback_custom"
+                    class="button blue"
+                >
+                    Try it
+                </a>
+                <a class="button orange code">
+                    Code
+                </a>
+<pre><code class="javascript">$.alert.open(<a class="string">'Lorem ipsum dolor sit amet'</a>, {A: <a class="string">'A'</a>, B: <a class="string">'B'</a>, C: <a class="string">'C'</a>}, <a class="function"><a class="keyword">function</a><a class="params">(button)</a> {</a>
+    <a class="keyword">if</a> (!button)
+        $.alert.open(<a class="string">'Alert was canceled.'</a>);
+    <a class="keyword">else</a>
+        $.alert.open(<a class="string">'You pressed the "'</a> + button + <a class="string">'" button.'</a>);
+});</code></pre>
+            </div>
+
+            <!-- DOCUMENTATION -->
+
+            <a
+                href="../doc/index.html"
+                target="_blank"
+                class="button orange big doc"
+            />
+                Click to view full documentation
+            </a>
+        </div>
+        
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    </body>
+</html>

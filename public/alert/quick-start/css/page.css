@@ -1,0 +1,168 @@
+
+/* =====[ GLOBAL STYLES ]======================================================================== */
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #63737f;
+    background: url(../img/background.jpg);
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    padding: 0 16px;
+    line-height: 20px;
+}
+
+/* =====[ BUTTONS ]============================================================================== */
+
+#page .button {
+    display: inline-block;
+    padding: 9px 18px;
+    min-width: 52px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#page .button + .button {
+    margin-left: 8px;
+}
+
+#page .button.big {
+    padding: 14px 22px;
+}
+
+#page .button.orange {
+    background: #f9661e;
+}
+
+#page .button.orange:hover {
+    background: #e20;
+}
+
+#page .button.blue {
+    background: #2d97fa;
+}
+
+#page .button.blue:hover {
+    background: #007aeb;
+}
+
+/* =====[ CONTENT ]============================================================================== */
+
+#page {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+#page .button.doc {
+    margin: 50px 0;
+}
+
+#page .box + .button.doc {
+    margin-top: 45px;
+}
+
+
+#page h1 {
+    margin-top: -5px;
+    font-size: 25px;
+    color: #252629;
+}
+
+#page h1 + p {
+    margin: 9px 0 50px;
+}
+
+#page h1 + .box {
+    margin-top: 50px;
+}
+
+#smartAlert[data-icon="hand"] #smartAlertIcon {
+    background-image: url(../img/hand.png);
+}
+
+#smartAlert[data-icon="tip"] #smartAlertIcon {
+    background-image: url(../img/tip.png);
+}
+
+#smartAlertContent a {
+    text-decoration: underline;
+}
+
+/* =====[ BOX ]================================================================================== */
+
+#page .box {
+    overflow: hidden;
+    margin-top: 21px;
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -ms-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -o-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+}
+
+#page .box:first-child {
+    margin-top: 0;
+}
+
+#page .box h2 {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 23px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    color: #3f526b;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -ms-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+    -o-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+}
+
+#page .box h3 {
+    margin-top: 35px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#page .box .button {
+    margin-top: 6px;
+    margin-bottom: 38px;
+}
+
+#page .box hr {
+    margin: 0 0 4px;
+    border-top: 1px solid #d6d6d6;
+    height: 0;
+}
+
+#page .box pre {
+    display: none;
+    padding: 0 35px 38px;
+}
+
+#page .box pre code {
+    max-width: 505px;
+    overflow: auto;
+}
+
+#page .box pre.visible {
+    display: block;
+}
